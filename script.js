@@ -42,7 +42,7 @@ request.onload = function () {
         temperature = parseFloat(data.main.temp) - 273.15;//converting from kelvin to celsius
         typeofweather = data.weather[0].main;
         line.style.display = "block";
-        line.innerHTML = "Your City Is: " + city1 + " and the temperature is " + temperature + " and it is " + typeofweather;
+        line.innerHTML = "Your City Is: " + city1 + ", the temperature is " + temperature + "°C and the type of weather is: " + typeofweather;
         console.log(typeofweather);
         if (typeofweather == "Clouds"){ //makes the background clouds
             console.log("this works")
@@ -66,7 +66,7 @@ request.onload = function () {
           body.backgroundImage="url('sunny.jpg')";
           body.backgroundRepeat= "none";
           body.backgroundSize= "cover";
-          line.color = "white";
+          line.style.color = "white";
         }
         else if (typeofweather = "Rain") {
           body.backgroundImage = "url('rain.jpg')";
@@ -111,7 +111,7 @@ request.onload = function () {
           temperature = parseFloat(data.main.temp) - 273.15;//converting from kelvin to celsius
           typeofweather = data.weather[0].main;
           line.style.display = "block";
-          line.innerHTML = "Your City Is: " + city + " and the temperature is " + temperature + " and it is " + typeofweather;
+          line.innerHTML = "Your City Is: " + city + ", the temperature is " + temperature + "°C and the type of weather is: " + typeofweather;
           console.log(city);
           console.log(typeofweather);
           if (typeofweather == "Clouds"){ //makes the background clouds
@@ -127,7 +127,7 @@ request.onload = function () {
           body.backgroundSize = "cover";
         }
         else if (typeofweather == "Dust") {
-          lline.style.color = "white";
+          line.style.color = "white";
           body.backgroundImage = "url('duster.jpg')";
           body.backgroundRepeat= "none";
           body.backgroundSize = "cover";
@@ -136,14 +136,22 @@ request.onload = function () {
           body.backgroundImage="url('sunny.jpg')";
           body.backgroundRepeat= "none";
           body.backgroundSize= "cover";
-          line.color = "white";
+          line.style.color = "white";
         }
-        else if (typeofweather = "Rain") {
+        else if (typeofweather == "Rain") {
+          line.style.color = "white";
           body.backgroundImage = "url('rain.jpg')";
           body.backgroundRepeat = "none";
           body.backgroundSize = "cover";
         }
+        else if (typeofweather == "Mist") {
+          body.backgroundImage = "url('mist.jpg')";
+          body.backgroundRepeat = "none";
+          body.backgroundSize = "cover";
+          line.style.color = "black";
+        }
         else{
+
             body.backgroundImage = ("none")
         }
         console.log(typeofweather)

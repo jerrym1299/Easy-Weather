@@ -1,0 +1,93 @@
+button {
+    font-family : inherit;
+    font-size: 1em;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.root{
+
+}
+#myInput{
+  width: 300px;
+  height: 28px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0
+
+}
+#myBtn{
+  height: 35px;
+  font-family: 'Roboto', sans-serif;
+
+}
+input[type=button]{
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+
+  width: 90px;
+  height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  padding: 0;
+}
+input[type=button]:hover{
+  opacity: 0.8;
+}
+#refresh{
+  /*
+  color: white;
+  background-color: #44146F;
+  border-color: #44146F;
+  border-radius: 4px;
+  width: 90px;
+  height: 30px;
+  text-transform: uppercase;
+  font-family:'Roboto', sans-serif; */
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  min-width: 64px;
+  height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+
+}
+#refresh:hover{
+  opacity: 0.8;
+}
+.rootchild{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    text-align: center;
+    transform: translate(-50%, -50%) }
+}
