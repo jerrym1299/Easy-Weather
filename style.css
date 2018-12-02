@@ -1,11 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* For Mobile*/
+
+html{
+  background: url(image url) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+input[type=button]{
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+
+  width: 60px;
+  height: 25px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  padding: 0;
+}
+#myInput{
+  height: 20px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0
+
+}
+#refresh{
+  /*
+  color: white;
+  background-color: #44146F;
+  border-color: #44146F;
+  border-radius: 4px;
+  width: 90px;
+  height: 30px;
+  text-transform: uppercase;
+  font-family:'Roboto', sans-serif; */
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  min-width: 54px;
+  height: 26px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+
+}
+.Name{
+  padding-top: 110%;
+  float:left;
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+}
+
+.rootchild{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    text-align: center;
+    transform: translate(-50%, -50%) }
+}
+
+
+@media only screen and (min-width: 768px) {
+  /*for desktop*/
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
 button {
     font-family : inherit;
     font-size: 1em;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-.root{
 
-}
+
 #myInput{
   width: 300px;
   height: 28px;
@@ -90,4 +185,10 @@ input[type=button]:hover{
     margin-right: -50%;
     text-align: center;
     transform: translate(-50%, -50%) }
+}
+.Name{
+  font-size: 20px;
+  float:left;
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  margin-top: 55%;
 }

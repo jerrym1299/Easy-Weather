@@ -68,8 +68,13 @@ request.onload = function () {
           body.backgroundSize= "cover";
           line.style.color = "white";
         }
-        else if (typeofweather = "Rain") {
+        else if (typeofweather == "Rain") {
           body.backgroundImage = "url('rain.jpg')";
+          body.backgroundRepeat = "none";
+          body.backgroundSize = "cover";
+        }
+        else if (typeofweather == "Snow") {
+          body.backgroundImage = "url('snow.jpg')";
           body.backgroundRepeat = "none";
           body.backgroundSize = "cover";
         }
@@ -149,6 +154,12 @@ request.onload = function () {
           body.backgroundRepeat = "none";
           body.backgroundSize = "cover";
           line.style.color = "black";
+        }
+        else if (typeofweather == "Snow") {
+          line.style.color = 'black';
+          body.backgroundImage = "url('snow.jpg')";
+          body.backgroundRepeat = "none";
+          body.backgroundSize = "cover";
         }
         else{
 
